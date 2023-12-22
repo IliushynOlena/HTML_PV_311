@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to CSS Style</title>
+    <!-- CSS seletors -->
+    <style>
+        /*
+        Create selector:
+        type {
+            property : value;
+            property : value;
+            property : value;
+        }*/
+        h1,h2, h3{
+            background-color: darkblue;
+            color:white;
+           
+            padding: 16px;
+            border-radius: 8px;
+            box-shadow: 10px 8px 10px darkred;
+            border: 2px solid red;
+        }
+        h1, h2{
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 150%;
+        }
+        code{
+            background-color: black;
+            color: rgb(237, 237, 237);
+            font-size: 22px;
+            font-family: monospace;
+            padding: 4px;
+            border-radius: 4px;
+        }
+        mark{
+            text-transform: uppercase;
+            font-weight: 200;
+            letter-spacing: 10px;
+        }
+        /*----------class selectors---------*/
+        .main-word{
+            color: grey;
+            font-size: 22px;
+            border: 1px solid darkgray;
+            padding: 3px;
+        }
+        .styled{
+            text-decoration: underline;
+            font-weight: normal;
+        }
+        body{
+            background-color: aquamarine;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .serif-font{
+            font-family: serif;
+        }
+        .sans-serif-font{
+            font-family: sans-serif;
+        }
+        .monospace-font{
+            font-family: monospace;
+        }
+        .cursive-font{
+            font-family: cursive;
+        }
+        .fantasy-font{
+            font-family: fantasy;
+        }
+        #main-title{
+            background-color: cornflowerblue;
+            color: black;
+            /*border-color: black;*/
+            border-bottom: 2px solid black;
+            border-top: 2px solid rgb(66, 245, 6);
+            border-right: 2px solid rgb(116, 10, 246);
+            border-left: 2px solid rgb(233, 97, 24);
+        }
+        #main-title{
+            background-color: blueviolet;
+        }
+        .main{
+            background-color: rgb(128, 226, 43);
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1 id="main-title" class="main">Intro to <abbr title="Cascading Style Sheets">CSS</abbr> </h1>
+    <h3>Testing title</h3>
+    <p>H<sub>2</sub>O </p> <br> <p>2<sup>3</sup> = 8</p>
+    <p> <strong>CSS</strong> is a formal language for describing 
+        the appearance of a document written 
+        using a markup language. Can also be applied to 
+        any XML documents, such as SVG or XUL</p>
+
+        <h2 style="color:white; font-weight:700; background-color:darkblue;text-align:center;">
+            Inline styles</h2>
+        <p style="color:aqua; font-weight:500; background-color:white">
+            Lorem ipsum dolor, 
+            sit amet consectetur adipisicing elit. Voluptatem, 
+            enim ea. Qui a, exercitationem iure quisquam numquam 
+            suscipit animi ad accusamus delectus dignissimos, 
+            dolorem veniam labore quis ipsum at eaque reprehenderit. 
+            Minus eius necessitatibus voluptas voluptatibus. Ab 
+            ullam totam consectetur, eius, autem cumque laboriosam 
+            aliquid omnis blanditiis adipisci culpa quasi.</p>
+        
+        <h2>Styling using CSS Tag Selectors</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex excepturi molestias 
+            consequuntur ratione illo corrupti dignissimos vitae, quos laboriosam!</p>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse ex excepturi molestias 
+            consequuntur ratione illo corrupti dignissimos vitae, quos laboriosam!</p>
+        <h2>Styling using CSS Selectors</h2>
+        <p><mark>Lorem ipsum dolor sit amet consectetur,</mark>  <br>
+           Create variable :  <code>a = 10</code><br><br>
+           Print variable :  <code>print(a)</code><br><br>
+           Logic construction :  <code>if - else</code><br>
+        adipisicing elit. Expedita, et?</p>
+
+        <h2>Styling using CSS Selectors</h2>
+        <h2>Styling using CSS Selectors</h2>
+        <hr>
+        <h2>Example using Class Selectors</h2>
+        <p> <strong class="main-word">Lorem ipsum dolor</strong>  
+            sit amet consectetur adipisicing elit. 
+           <strong class="styled">Doloribus facilis labore,</strong>  
+           obcaecati, nesciunt architecto 
+           <strong class="main-word">in dolores hic fuga minus</strong>  nam alias distinctio adipisci 
+            quia magni. Architecto suscipit dolores placeat at?</p>
+
+        <h2>Standart Font types</h2>
+        <h2>Serif Font</h2>
+        <p class="serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae officiis neque quasi fuga odio, eos veniam non at voluptatum sit.</p>
+        <h2>Sans Serif Font</h2>
+        <p class="sans-serif-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae officiis neque quasi fuga odio, eos veniam non at voluptatum sit.</p>
+        <h2>Monospace Font</h2>
+        <p class="monospace-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae officiis neque quasi fuga odio, eos veniam non at voluptatum sit.</p>
+        <h2>Cursive Font</h2>
+        <p class="cursive-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae officiis neque quasi fuga odio, eos veniam non at voluptatum sit.</p>
+        <h2>Fantasy Font</h2>
+        <p class="fantasy-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Recusandae officiis neque quasi fuga odio, eos veniam non at voluptatum sit.</p>
+
+    
+</body>
+</html>

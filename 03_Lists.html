@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+    <style>
+        .custom-ul-style{
+            list-style-type:disc ;
+            list-style-position: outside;
+           padding-left: 10px;
+           /*list-style-image: url(./markers/leaf.png);*/
+        }
+        ol {
+            list-style-type: decimal;
+        }
+       /* ol li::marker {
+            color: red;
+            font-weight: bold;
+        }*/
+        ol {
+            font-weight: bold;
+        }
+        ul{
+            font-weight: 200;
+        }
+        #winter{
+            color: blue;
+        }
+        #spring{
+            color: rgb(14, 233, 14);
+        }
+        #summer{
+            color:yellow
+        }
+        #autumn{
+            color: rgb(251, 125, 23);
+        }
+        #winter li{
+            list-style-image: url(./markers/snow.png);
+        }
+        #spring li{
+            list-style-image: url(./markers/leaf.png);
+        }
+        #summer li{
+            list-style-image: url(./markers/sun.png);
+        }
+        #autumn li{
+            list-style-image: url(./markers/rain.png);
+        }
+        dt{
+            font-weight: bold;
+            color: rgb(32, 105, 32);
+        }
+        dd{
+            color: brown;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        .before-class{
+            list-style-type: none;
+            /*font-style: italic;*/
+            counter-reset: number;
+        }
+        .before-class li::before{
+           /* content: '- ';
+            color: greenyellow;*/
+            content: counter(number) ')';
+            counter-increment: number;
+        }
+    </style>
+</head>
+<body>
+    <h1>Working with Lists in HTML</h1>
+
+    <h2>Before Psevdo Class</h2>
+    <ol class="before-class">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Nesciunt omnis blanditiis rem minus?</li>
+        <li>Repudiandae repellat quisquam ad assumenda!</li>
+        <li>Libero in ea neque error.</li>
+        <li>Obcaecati consequuntur labore soluta culpa.</li>
+    </ol>
+    <h2>Seasons</h2>
+<ol>
+    <li id="winter">Winter
+        <ul>
+            <li>December</li>
+            <li>January</li>
+            <li>February</li>
+        </ul>
+    </li>
+    <li id="spring">Spring
+        <ul>
+            <li>March</li>
+            <li>April</li>
+            <li>May</li>
+        </ul>
+    </li>
+    <li id="summer">Summer
+        <ul>
+            <li>June</li>
+            <li>July</li>
+            <li>August</li>
+        </ul>
+    </li>
+    <li id="autumn">Autumn
+        <ul>
+            <li>September</li>
+            <li>October</li>
+            <li>November</li>
+        </ul>
+    </li>
+</ol>
+
+    <h2>Multilevel List</h2>
+    <ol>
+        <li>Lorem ipsum dolor sit amet consectetur, 
+            adipisicing elit. Maiores, animi?
+            <ol>
+                <li>Lorem, ipsum dolor.</li>
+                <li>Mollitia, pariatur atque.</li>
+                <li>Delectus, nam earum.</li>
+            </ol>
+        </li>
+           
+        <li>In possimus voluptates alias quam iusto harum repellendus impedit esse!</li>
+        <li>Ipsam eaque soluta possimus provident delectus at suscipit accusamus? Tenetur!</li>
+        <li>Consectetur voluptate harum eos excepturi quisquam mollitia tempora quam reprehenderit?</li>
+        <li>Sint corrupti perferendis et, nihil nemo non ipsam labore totam.</li>
+    </ol>
+
+
+    <h2>Unordered List</h2>
+    <ul class="custom-ul-style">
+        <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, perspiciatis.</li>
+        <li>Eum iste hic autem.
+        </li>
+        <li>Cumque enim earum natus.</li>
+        <li>Praesentium in accusamus est.</li>
+    </ul>
+    <h2>Ordered List</h2>
+    <ol start="10" reversed>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Nisi architecto ut corrupti culpa.</li>
+        <li>Id distinctio molestiae reiciendis earum?</li>
+        <li value="20">Nam culpa eius accusantium voluptate?</li>
+        <li>Nam culpa eius accusantium voluptate?</li>
+        <li value="30">Nam culpa eius accusantium voluptate?</li>
+        <li>Nam culpa eius accusantium voluptate?</li>
+    </ol>
+    <h2>Definition List</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Architecto, at!</dd>
+        <dt>CSS</dt>
+        <dd>Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Pariatur, corporis.</dd>
+        <dt>JS</dt>
+        <dd>Lorem ipsum, dolor sit amet consectetur 
+            adipisicing elit. Facilis, iusto.</dd>
+    </dl>
+
+    
+</body>
+</html>
