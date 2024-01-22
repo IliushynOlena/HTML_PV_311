@@ -1,0 +1,60 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+caption{
+    text-align: right;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #dddddd;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+   
+}
+th, td{
+    padding: 18px 16px;
+   
+}
+thead, tfoot{
+    text-transform: uppercase;
+}
+tbody{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.col-1{
+    background-color: grey;
+}
+.col-2{
+    background-color: cyan;
+}
+.col-3{
+    background-color: green;
+}
+.col-4{
+    background-color: yellow;
+}
+.col-5{
+    background-color: red;
+}
+td:first-child, th:first-child{
+    color: black;
+}
+td:first-child{
+    text-align: left;
+    font-weight: normal;
+}
+td span{
+    border: 1px solid white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    display: inline-block;
+    line-height: 25px;
+}

@@ -1,0 +1,32 @@
+table{
+    /* border: 2px solid black;
+    border-collapse: separate;
+    border-spacing: 10px;
+    background-color: rgb(186, 243, 243);
+    background-image: url(./img/bg_1.jpg);
+    empty-cells: hide; */
+    border-collapse: collapse;
+}
+tr{
+    /* background-color: rgb(244, 103, 103);
+    background-image: url(./img/bg_2.jpg); */
+}
+
+th{
+    /* border: 1px solid red; */
+}
+td{
+    /* border: 1px solid blue; */
+    border: 1px solid black;
+    width: 50px;
+    height: 20px;
+}
+#unique
+{
+    /* width: 30vw;
+    height: 20vh ;
+    text-align: right;
+    vertical-align: bottom;
+    background-color: coral;
+    background-image: url(./img/bg_3.jpg); */
+}

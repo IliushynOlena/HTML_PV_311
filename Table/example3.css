@@ -1,0 +1,22 @@
+caption{
+    text-align: right;
+    caption-side: bottom;
+}
+.col-1
+{
+    background-color: rgb(150, 245, 253);
+}
+.col-2
+{
+    background-color: rgb(245, 136, 63);
+}
+.col-3
+{
+    background-color: rgb(142, 182, 241);
+}
+thead{
+    color: rgb(129, 201, 61);
+}
+tfoot{
+    color: white;
+}
